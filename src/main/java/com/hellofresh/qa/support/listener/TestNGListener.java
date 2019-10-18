@@ -1,5 +1,7 @@
 package com.hellofresh.qa.support.listener;
 
+import com.hellofresh.qa.core.utils.DriverManager;
+import com.hellofresh.qa.support.util.ReporterUtil;
 import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -17,6 +19,8 @@ public class TestNGListener implements ITestListener {
 
     public void onTestStart(ITestResult iTestResult) {
         log.info("[Test Started] : " + iTestResult.getMethod().getConstructorOrMethod().getName());
+        currentTest.set(getMethodName(iTestResult) + "_" + DriverManager.getBrowser());
+        ReporterUtil.initializeLogger();
     }
 
     public void onTestSuccess(ITestResult iTestResult) {
