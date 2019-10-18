@@ -10,6 +10,9 @@ import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Parent base test class
+ */
 public class TestObject {
 
     protected WebDriver driver;

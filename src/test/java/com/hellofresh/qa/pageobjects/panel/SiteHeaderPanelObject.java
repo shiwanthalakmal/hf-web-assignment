@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 
 /**
  * SiteHeaderPanelObject common components and behaviours
+ *
  * @author SLakmal
  * @since 10/18/2019
  */
@@ -22,6 +23,7 @@ public class SiteHeaderPanelObject extends PageObject {
 
     /**
      * Validate: Verify logged user profile name
+     *
      * @param name
      * @throws FrameworkException
      */
@@ -32,6 +34,7 @@ public class SiteHeaderPanelObject extends PageObject {
 
     /**
      * Validate: Verify sing-out link availability
+     *
      * @return SiteMyProfilePageObject
      * @throws FrameworkException
      */
@@ -42,6 +45,7 @@ public class SiteHeaderPanelObject extends PageObject {
 
     /**
      * Validate: Verify current site url
+     *
      * @param url
      * @return SiteMyProfilePageObject
      */

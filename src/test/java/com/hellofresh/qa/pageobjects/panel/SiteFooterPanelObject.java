@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 
 /**
  * SiteFooterPanelObject common components and behaviours
+ *
  * @author SLakmal
  * @since 10/18/2019
  */

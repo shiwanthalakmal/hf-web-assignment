@@ -17,7 +17,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-
+/**
+ * Parent page object class
+ */
 public class PageObject {
 
     private static Logger log = Logger.getLogger(PageObject.class);
@@ -77,14 +79,12 @@ public class PageObject {
             log.error(message);
             Assert.fail(message);
         } catch (Exception e) {
-            log.error("Error Occurred ! "+e);
+            log.error("Error Occurred ! " + e);
         }
     }
 
     protected void step_initializer() {
-        ReporterUtil.getLogger().info(
-                Thread.currentThread().getStackTrace()[2].getFileName() + "::" +
-                Thread.currentThread().getStackTrace()[2].getMethodName());
+        ReporterUtil.getLogger().info(Thread.currentThread().getStackTrace()[2].getFileName() + "::" + Thread.currentThread().getStackTrace()[2].getMethodName());
     }
 
     protected WebDriver getDriver() {

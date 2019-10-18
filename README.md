@@ -1,4 +1,4 @@
-# hf-web-test
+# hf-web-assignment
 
 ### Prerequisites:
 > - Java 1.8
@@ -6,17 +6,17 @@
 > - Git
 
 ### Execute hf-web-test via Commandline:
-> - Clone the hf-web-test project from git. 
->   Command: ```git clone https://github.com/enilanthi/hf-web-test.git```
-> - Move to hf-web-test directory. ```cd hf-web-test```
+> - Clone the hf-web-assignment project from git.
+>   Command: ```https://github.com/shiwanthalakmal/hf-web-assignment.git```
+> - Move to hf-web-assignmentt directory. ```cd hf-web-assignment```
 > - Simply trigger the execution using ```mvn clean test``` command
 
 #### Additional Information:
 > - The test execution will start parallely on Chrome and FireFox. For some reason if you want to disable the execution on either of the browsers, goto TestNG xml file (which can be found in ```hf-web-test\src\test\resources\testplan\testng.xml```), and comment-out the section for Chrome Test or FireFox Test.
 > - ```NOTE: Apart from the 3 test cases already given, a 4th test is added to demonstrate the behavior on the failure.```
-> - Logs will be generated under: ```hf-web-test\logs```
-> - A comprehensive html report will be generated under: ```hf-web-test\target\extent-reports\test-output```. Note: This will also have screencapture(s) attached to the failed test(s)
-> - You can also directly access these Screenshots under: ```hf-web-test\target\screenshots\browser```
+> - Logs will be generated under: ```hf-web-assignment\logs```
+> - A comprehensive html report will be generated under: ```hf-web-assignment\target\execution-results\results```. Note: This will also have screencapture(s) attached to the failed test(s)
+> - You can also directly access these Screenshots under: ```hf-web-assignment\target\screenshots\browser```
 - ```**NOTE: Compatible FireFox version: 61 or above```
 
 ### Features:
@@ -27,7 +27,7 @@
 - [x] WebDriver factory
 - [x] Encapsulation layers like test data, logic of tests, actions on web pages and so on
 - [x] Configurator:
-> - [x] Run tests in parallel mode. This is implemented using TestNG. The testng.xml file can be found under ```hf-web-test\src\test\resources\testplan```
+> - [x] Run tests in parallel mode. This is implemented using TestNG. The testng.xml file can be found under ```hf-web-assignment\src\test\resources\testplan```
 > - [x] Ability to run tests for different browsers by configuring. Supports Chrome and FireFox. The required browser can be passed through testng.xml
 > - [x] Ability to run tests for different environments(urls) by configuring. The URL too can be passed via testng.xml, as the parameter for tests
 > - [x] Reading test data from external file. This feature is used in the checkout test (Test name: itemCheckoutTest), to input the quantity and the size of the dress.

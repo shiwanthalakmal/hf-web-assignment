@@ -4,6 +4,9 @@ import com.hellofresh.qa.support.util.Utility;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
+/**
+ * Driver connection class
+ */
 public class DriverConnection {
     private static Logger log = Logger.getLogger(DriverConnection.class);
 

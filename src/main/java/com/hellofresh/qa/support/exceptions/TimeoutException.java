@@ -3,6 +3,9 @@ package com.hellofresh.qa.support.exceptions;
 
 import org.apache.log4j.Logger;
 
+/**
+ * TimeoutException
+ */
 public class TimeoutException extends FrameworkException {
     Logger log = Logger.getLogger(TimeoutException.class);
 

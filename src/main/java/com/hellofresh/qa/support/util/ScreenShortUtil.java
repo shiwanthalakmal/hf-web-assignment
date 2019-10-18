@@ -21,6 +21,7 @@ public class ScreenShortUtil {
 
     /**
      * Returns the path under which the screenshot will be generated
+     *
      * @return
      */
     public static String getScreenshotPath() {
@@ -30,6 +31,7 @@ public class ScreenShortUtil {
 
     /**
      * Returns the name of the image file (screenshot)
+     *
      * @return
      */
     public static String getImgFileName() {
@@ -38,6 +40,7 @@ public class ScreenShortUtil {
 
     /**
      * Takes the screen capture
+     *
      * @throws FrameworkException
      */
     public static void captureScreenshot() throws FrameworkException {

@@ -7,6 +7,9 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
 
+/**
+ * Driver factory class
+ */
 public class DriverManager {
 
     private static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<RemoteWebDriver>();
