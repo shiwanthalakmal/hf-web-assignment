@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class SiteTestSuite extends TestObject {
 
-    //@Test
+    @Test
     public void newly_created_user_login_end_to_end_flow() throws FrameworkException {
         new SiteHomePageObject().step_perform_sign_in_link()
                 .step_create_an_new_account()
@@ -22,7 +22,7 @@ public class SiteTestSuite extends TestObject {
                 .check_and_validate_current_site_url("controller=my-account");
     }
 
-    //@Test
+    @Test
     public void already_existing_user_login_flow() throws FrameworkException {
         new SiteHomePageObject().step_perform_sign_in_link()
                 .step_sign_in_already_existing_user("hf_challenge_123456@hf123456.com",
@@ -57,7 +57,7 @@ public class SiteTestSuite extends TestObject {
                 .check_and_validate_current_url_availability("controller=order-confirmation");
     }
 
-    //@Test
+    @Test
     public void negative_test_for_demonstration_purpose() throws FrameworkException {
         new SiteHomePageObject().step_perform_sign_in_link()
                 .step_sign_in_already_existing_user("autouser24112018@autoprac12345.com",
