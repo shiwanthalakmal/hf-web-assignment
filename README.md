@@ -5,14 +5,14 @@
 > - Maven
 > - Git
 
-### Execute hf-web-test via Commandline:
+### Execute hf-web-assignment via Commandline:
 > - Clone the hf-web-assignment project from git.
 >   Command: ```https://github.com/shiwanthalakmal/hf-web-assignment.git```
-> - Move to hf-web-assignmentt directory. ```cd hf-web-assignment```
+> - Move to hf-web-assignment directory. ```cd hf-web-assignment```
 > - Simply trigger the execution using ```mvn clean test``` command
 
 #### Additional Information:
-> - The test execution will start parallely on Chrome and FireFox. For some reason if you want to disable the execution on either of the browsers, goto TestNG xml file (which can be found in ```hf-web-test\src\test\resources\testplan\testng.xml```), and comment-out the section for Chrome Test or FireFox Test.
+> - The test execution will start parallely on Chrome and FireFox. For some reason if you want to disable the execution on either of the browsers, goto TestNG xml file (which can be found in ```hf-web-assignment\src\test\resources\testplan\testng.xml```), and comment-out the section for Chrome Test or FireFox Test.
 > - ```NOTE: Apart from the 3 test cases already given, a 4th test is added to demonstrate the behavior on the failure.```
 > - Logs will be generated under: ```hf-web-assignment\logs```
 > - A comprehensive html report will be generated under: ```hf-web-assignment\target\execution-results\results```. Note: This will also have screencapture(s) attached to the failed test(s)
