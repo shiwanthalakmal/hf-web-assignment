@@ -1,7 +1,7 @@
 # file-based project format:
 *.iws
 *.ipr
-#*.iml
+*.iml
 
 # generated folders
 target/
